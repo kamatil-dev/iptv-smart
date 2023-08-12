@@ -32,11 +32,11 @@
   </section>
   <img
     class="pl-6 block h-fit w-full"
-    src="/image-section--1536x936.png"
+    src="/image-section--1536x936.webp"
     alt=""
   />
-  <img class="block h-fit w-full" src="/section-3-smar.png" alt="" />
-  <img class="block h-fit w-full" src="/section-4-smart-1536x726.png" alt="" />
+  <img class="block h-fit w-full" src="/section-3-smar.webp" alt="" />
+  <img class="block h-fit w-full" src="/section-4-smart-1536x726.webp" alt="" />
 </template>
 
 <script setup>

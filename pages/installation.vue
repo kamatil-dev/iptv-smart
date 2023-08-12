@@ -1,7 +1,7 @@
 <template>
   <img
     class="block h-fit w-full my-20"
-    src="/installation-sldier-1-1.png"
+    src="/installation-sldier-1-1.webp"
     alt=""
   />
   <section class="bg-black text-white p-16 md:p-24 space-y-6">
@@ -23,7 +23,7 @@
   </section>
   <img
     class="block h-fit w-full"
-    src="/installation-sldier-3-1536x850.png"
+    src="/installation-sldier-3-1536x850.webp"
     alt=""
   />
 </template>
