@@ -581,7 +581,8 @@ const Settings = useState("settings"),
       scriptTag.onload = PaypalButton;
       document.body.appendChild(scriptTag);
       return;
-    }
+    } else
+      LoadingButton.value[`${Order.value.mois}-${Order.value.prix}`] = false;
     if (typeof window.paypal !== "undefined")
       window.paypal
         .Buttons({
@@ -607,14 +608,8 @@ const Settings = useState("settings"),
           },
           onCancel: function () {
             Loading.value = false;
-            LoadingButton.value[
-              `${Order.value.mois}-${Order.value.prix}`
-            ] = false;
           },
           onApprove: async function (data, actions) {
-            LoadingButton.value[
-              `${Order.value.mois}-${Order.value.prix}`
-            ] = false;
             return actions.order.capture().then(async (orderData) => {
               var transaction_id =
                 orderData?.purchase_units[0]?.payments.captures[0]?.id;
