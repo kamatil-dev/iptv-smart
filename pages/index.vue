@@ -53,7 +53,11 @@
     </button>
   </div>
   <section
-    :class="{ hidden: !Order.prix && Order.prix !== 0 }"
+    :class="{
+      hidden:
+        (!Order.prix && Order.prix !== 0) ||
+        LoadingButton[`${Order.mois}-${Order.prix}`],
+    }"
     class="fixed z-50 top-0 left-0 right-0 bottom-0 bg-black/70 backdrop-blur flex justify-center items-center"
   >
     <div class="relative w-full max-w-md max-h-full">
