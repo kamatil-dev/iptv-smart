@@ -4,7 +4,11 @@
   >
     <div class="flex flex-wrap h-auto md:h-16 items-center justify-between">
       <NuxtLink class="text-fuchsia-900" to="/">
-        <img class="w-12" :src="Settings.logo" alt="" />
+        <img
+          class="w-12"
+          :src="Settings.logo.replace('.png', '.avif')"
+          alt=""
+        />
       </NuxtLink>
 
       <div class="block md:hidden">
@@ -148,7 +152,11 @@
     </div>
   </section>
   <footer class="bg-fuchsia-950 mx-auto px-4 pb-16 text-white pt-8">
-    <img class="mx-auto w-16" :src="Settings.logo" alt="" />
+    <img
+      class="mx-auto w-16"
+      :src="Settings.logo.replace('.png', '.avif')"
+      alt=""
+    />
     <div
       class="mt-6 flex flex-col md:flex-row items-center justify-center gap-6"
     >
