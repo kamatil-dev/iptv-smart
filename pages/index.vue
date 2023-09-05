@@ -269,14 +269,9 @@
     </div>
   </section>
   <section
-    class="relative flex items-center justify-center h-screen mb-12 overflow-hidden"
+    class="relative flex items-center justify-center h-fit mb-12 mt-16 md:mt-0 md:h-screen overflow-hidden"
   >
-    <video
-      autoplay
-      loop
-      muted
-      class="absolute w-auto min-w-full min-h-full max-w-none"
-    >
+    <video autoplay loop muted class="w-full h-auto">
       <source src="/first.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
@@ -444,7 +439,10 @@
     <h3 class="mx-auto text-4xl md:text-6xl mb-6 text-center font-bold">
       Plans d'abonnement
     </h3>
-    <div class="grid grid-cols-1 gap-4 lg:grid-cols-4">
+    <div
+      class="grid grid-cols-1 gap-4"
+      :class="`lg:grid-cols-${Settings.plans.length}`"
+    >
       <div
         v-for="plan in Settings.plans"
         class="border-4 px-12 space-y-6"

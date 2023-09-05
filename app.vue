@@ -178,7 +178,7 @@
         </svg>
         {{ Settings.email }}
       </span>
-      <span class="inline-flex gap-2 items-center">
+      <span class="inline-flex gap-2 items-center" v-if="Settings.whatsapp">
         <svg
           class="block w-6 h-6 text-[#4c35e3]"
           aria-hidden="true"
@@ -228,6 +228,7 @@
     </ul>
   </footer>
   <a
+    v-if="Settings.whatsapp"
     :href="
       `https://wa.me/` + Settings.whatsapp.replaceAll(' ', '').replace('+', '')
     "
