@@ -59,8 +59,8 @@
             qu'utilisateur de notre service IPTV Smarter Pro.</p>
     </section>
 </template>
-<script setup>
-const Settings = useState("settings")
+<script lang="ts" setup>
+const Settings = useState<SettingsT>("settings")
 
 useHead({
     title: "Politique de remboursement"

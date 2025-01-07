@@ -7,8 +7,8 @@
     </section>
 </template>
 
-<script setup>
-const Settings = useState("settings")
+<script lang="ts" setup>
+const Settings = useState<SettingsT>("settings")
 
 useHead({
     title: "Contactez-nous"

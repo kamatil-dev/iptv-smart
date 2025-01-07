@@ -76,10 +76,10 @@
     <p>Veuillez noter que ces Conditions constituent un accord légalement contraignant entre vous et IPTV Smarter Pro.
         En utilisant l'Application, vous reconnaissez avoir lu, compris et accepté d'être lié par ces Conditions.</p>
 </section></template>
-<script setup>
-const Settings = useState("settings")
+<script lang="ts" setup>
+const Settings = useState<SettingsT>("settings");
 
 useHead({
-    title: "Conditions générales d'utilisation"
-})
+	title: "Conditions générales d'utilisation",
+});
 </script>
